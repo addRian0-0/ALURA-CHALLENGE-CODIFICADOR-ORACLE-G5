@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+:root {
+    --bg-color: rgba(17, 17, 17, 0.8);
+    --box-shadow: rgba(17, 17, 17, 0.5);
+    --border-white: rgb(201, 196, 196);
+    --white-lg: rgb(201, 196, 196);
+    --red-back: rgb(111, 0, 0);
+    --red-resalt: rgb(231, 101, 122);
+    --black-transparent: rgba(31, 31, 31, 0.5);
+}
+
+body {
+    background-image: url("./assets/LoveandLiberty.jpg");
+}
+
+header h2 {
+    margin: 30px;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+h2 span{
+    color: var(--red-resalt);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 100px;
+}
+
+.item {
+    margin: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.item:first-child {
+    flex-basis: 15%;
+}
+
+.box {
+    width: 90%;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    box-shadow: -10px 5px 10px var(--box-shadow);
+    padding: 20px;
+}
+
+textarea {
+    resize: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+
+#i-uno {
+    border-bottom: 2px solid var(--border-white);
+    height: 70vh;
+}
+
+.box-btn {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-btn button {
+    border: none;
+    background-color: var(--black-transparent);
+    border-radius: 2px;
+    box-shadow: -10px 5px 10px var(--box-shadow);
+    color: var(--white-lg);
+    cursor: pointer;
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px 35px 20px 35px;
+    transition: 0.3s;
+}
+
+.box-btn button:hover {
+    background-color: var(--bg-color);
+    color: var(--red-resalt);
+}
+
+.item:last-child {
+    display: flex;
+    align-items: center;
+}
+
+#box-preview {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-preview img {
+    margin: 32px;
+    border-radius: 50%;
+    width: 164px;
+    height: 164px;
+}
+
+.adv1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.adv2 {
+    margin: 16px;
+    font-size: 22px;
+    color: #495057;
+}
+
+#box-reveal {
+    display: none;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.btn-copy {
+    cursor: pointer;
+    color: var(--white-lg);
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.btn-copy:hover {
+    color: var(--red-resalt);
+}
+
+#res-txt {
+    font-size: 22px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-color);
+}
+
+footer .container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container div {
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.container div:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+div:hover a {
+    color: var(--red-resalt);
+}
+
+.contacto {
+    width: 46px;
+    height: 46px;
+}
+
+@media screen and (max-width: 850px) {
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        display: none;
+    }
+
+    header h2{
+        font-size: 26px;
+    }
+
+    .box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #i-uno {
+        font-size: 20px;
+    }
+
+    #lupa {
+        display: none;
+    }
+
+    #box-preview {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 20vh;
+    }
+
+    #box-reveal {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 20vh;
+    }
+
+}
